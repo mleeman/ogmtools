@@ -4,6 +4,9 @@ Priority: optional
 Maintainer: Marc Leeman <marc.leeman@gmail.com>
 Build-Depends: debhelper (>= 9), cdbs, automake, libvorbis-dev (>= 1.0.0-2), libvorbis0a, libdvdread-dev, libogg0, quilt
 Standards-Version: 3.9.8
+Homepage: https://www.bunkus.org/videotools/ogmtools/
+Vcs-git: https://github.com/mleeman/ogmtools.git
+Vcs-Browser: https://github.com/mleeman/ogmtools
 
 Package: ogmtools
 Architecture: any
