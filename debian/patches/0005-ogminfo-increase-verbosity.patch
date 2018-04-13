@@ -1,0 +1,21 @@
+From: Marc Leeman <marc.leeman@gmail.com>
+Date: Thu, 1 Sep 2016 13:46:50 +0200
+Subject: ogminfo: increase verbosity
+
+---
+ ogminfo.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ogminfo.c b/ogminfo.c
+index ca5f734..8294e83 100644
+--- a/ogminfo.c
++++ b/ogminfo.c
+@@ -188,7 +188,7 @@ void handle_packet(stream_t *stream, ogg_packet *pack, ogg_page *page) {
+     }
+     vorbis_comment_clear(&vc);
+   } else if ((stream->stype == 'a') && stream->vorbis) {
+-    if (verbose < 1)
++    if (verbose < 2)
+       return;
+     fprintf(stdout, "(%s) a%d: % 7ld bytes granulepos: % 10lld pno: % 10lld ",
+              __FILE__, stream->sno, pack->bytes, ogg_page_granulepos(page),

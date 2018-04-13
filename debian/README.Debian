@@ -1,6 +1,23 @@
 ogmtools for Debian
 -------------------
 
-First release, still need to check platform dependent compilation
+* All programs in this release can again read the broken stream
+  headers produced by ogmmerge versions prior to v1.1. If users
+  want to fix their old files then running them through ogmmerge
+  1.2 should be enough:
 
- -- Marc Leeman <marc.leeman@ieee.org>, Mon,  2 Sep 2002 10:25:46 +0200
+-- Marc Leeman <marc.leeman@ieee.org>, Mon,  2 Sep 2002 10:25:46 +0200z
+
+ogmmerge -o new_and_fixed.ogm old_and_broken.ogm
+
+-- Marc Leeman <mleeman@users.sourceforge.net>, Fri,  21 Nov 2003 07:47:51:51 +0200
+
+* ogmcat is currently undocumented. It compiles and generates the
+  appropriate binary, but it is currently not functioning. It is not quite
+  clear if this will be fixed in the future by upstream.
+
+-- Marc Leeman <mleeman@users.sourceforge.net>, Fri,  15 Nov 2002 12:51:11 +0200
+
+* Initial Release
+
+-- Marc Leeman <mleeman@users.sourceforge.net>, Mon,  2 Sep 2002 10:25:46 +0200

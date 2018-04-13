@@ -1,68 +1,252 @@
+ogmtools (1:1.5-4) unstable; urgency=medium
+
+  * debian: add source format to quilt
+  * control: depend on quilt
+  * control: add misc:Depends
+  * README.Debian: import older changes
+  * debian: compat level 9
+  * debian/control: import changes
+  * changelog: import changes up to now
+  * copyright: update debian copyright
+  * rules: manual import
+  * debian: add patches on the sources
+  * debian/rules: convert to cd bs
+  * debian/control: update build depends to quilt/cdbs
+  * gitignore: ignore automake cruft
+  * git: ignore deps dirs
+  * gitignore: autom4te cruft
+  * debian:control: update standards version
+  * debian/control: indent list
+  * debian/copyright: silence copyright-without-copyright-notice
+  * gitignore: configure
+
+ -- Marc Leeman <marc.leeman@gmail.com>  Thu, 01 Sep 2016 14:34:32 +0200
+
+ogmtools (1:1.5-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Switch to compat level 9. (Closes: #800203)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 06 Feb 2016 22:41:41 +0100
+
+ogmtools (1:1.5-3) unstable; urgency=low
+
+  * fix dependency on libdvdread3-dev
+  * fix man page typos (Closes: #305646, Closes: #305647)
+  * Upload sponsored by Christian Marillat
+
+ -- Marc Leeman <marc.leeman@gmail.com>  Fri, 15 Aug 2008 11:41:19 +0200
+
+ogmtools (1:1.5-2.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * Use $FOO instead of @FOO@ when setting CFLAGS and CXXFLAGS in
+    configure.in; fixes FTBFS. (Closes: #374359)
+
+ -- Steinar H. Gunderson <sesse@debian.org>  Mon, 26 Jun 2006 22:30:41 +0200
+
+ogmtools (1:1.5-2) unstable; urgency=low
+
+  * When using -v and -s together, the verbose output is removed (Closes: #296741)
+  * Fix of wrong length reporting (Closes: #296739)
+  * depend on dpatch for patches
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <marc.leeman@gmail.com>  Mon,  7 Mar 2005 09:31:25 +0100
+
+ogmtools (1:1.5-1) unstable; urgency=low
+
+  * New upstream release
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <marc.leeman@gmail.com>  Sun,  7 Nov 2004 19:47:13 +0100
+
+ogmtools (1:1.4.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Close bug where user is trying to install 3rd party package (Closes: #259722)
+  * Close of 90 day old bug that is not reproducible with any compiler:
+    Ice while compiling avilib (Closes: #247620)
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  4 Aug 2004 06:54:30 +0200
+
+ogmtools (1:1.4-3) unstable; urgency=low
+
+  * fix of libvorbis0 dependency (Closes: Bug#259722)
+  * cannot reproduce bug (with gcc 4:3.3.3-3 or later) (Closes: Bug#247620)
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Mon, 19 Jul 2004 15:52:33 +0200
+
+ogmtools (1:1.4-2) unstable; urgency=low
+
+  * Fix accidental inclusion of experimental libgcc1 dependency (Closes: Bug#245598)
+  * Added overdue upload credits to Luigi
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Sat, 24 Apr 2004 12:41:36 +0200
+
 ogmtools (1:1.4-1) unstable; urgency=low
 
-  * new version.
+  * New upstream (Closes: Bug#231654)
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Wed, 14 Apr 2004 21:18:38 +0200
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed, 21 Apr 2004 10:45:27 +0200
 
-ogmtools (1:1.3-1) unstable; urgency=low
+ogmtools (1:1.2-2) unstable; urgency=low
 
-  * new upstream.
+  * run autotools configuration from debian/rules to assure the use of
+    automake-1.7 (thanks to Jason Thomas)
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Mon,  5 Apr 2004 13:22:32 +0200
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Fri,  26 November 2003 20:05:43 +0200
 
 ogmtools (1:1.2-1) unstable; urgency=low
 
-  * new upstream.
+  * New Upstream version
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Thu, 20 Nov 2003 23:49:12 +0100
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Fri,  21 November 2003 07:45:45 +0200
 
 ogmtools (1:1.1-1) unstable; urgency=low
 
-  * new upstream.
+  * New Upstream version
+  * Added Automake version check in debian/rules
+  * Added new option for summary of streams (Closes: Bug#214420)
 
- -- Moritz Bunkus <moritz@bunkus.org>  Tue, 28 Oct 2003 21:52:29 +0100
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  29 October 2003 07:17:34 +0200
+
+ogmtools (1:1.0.3-4) unstable; urgency=low
+
+  * Updated automake dependency from automake1.5 to automake1.7 i
+    (Closes: Bug#205989)
+  * Update Standards version to 3.6.0
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  18 August 2003 16:32:42 +0200
+
+
+ogmtools (1:1.0.3-3) unstable; urgency=low
+
+  * Update Standards version to 3.5.10
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  02 June 2003 10:32:53 +0200
+
+ogmtools (1:1.0.3-2) unstable; urgency=low
+
+  * Build-Depend against libdvdread3-dev instead of older libdvdread2-dev
+  * Removed libdvdread2 from Build-Depends (is included by libdvdread2-dev),
+    same goes for libdvdread3{-dev}
+  * Depend on libdvdread3 instead of libdvdread2
+  * This update to libdvdread Closes: Bug#195551
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  02 June 2003 10:32:53 +0200
 
 ogmtools (1:1.0.3-1) unstable; urgency=low
 
-  * new upstream.
+  * New upstream release
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Tue, 20 May 2003 09:08:04 +0200
-
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  21 May 2003 17:48:22 +0200
 ogmtools (1:1.0.2-1) unstable; urgency=low
 
-  * new upstream.
+  * New upstream release
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Mon,  5 May 2003 08:00:00 +0200
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Tue,  05 May 2003 10:29:32 +0200
+
+ogmtools (1:1.0.1-2) unstable; urgency=low
+
+  * dependency on libvorbis0a (Closes: Bug#185001)
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Tue,  09 Mar 2003 14:43:43 +0200
 
 ogmtools (1:1.0.1-1) unstable; urgency=low
 
-  * new upstream.
+  * New Upstream
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Tue,  4 Mar 2003 14:33:03 +0100
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Tue,  04 Mar 2003 15:54:46 +0200
 
 ogmtools (1:1.0.0-1) unstable; urgency=low
 
-  * new upstream.
+  * New Upstream
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Sat,  1 Mar 2003 18:34:32 +0100
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Sat,  01 Mar 2003 23:48:23 +0200
 
 ogmtools (1:0.973-1) unstable; urgency=low
 
-  * new upstream.
+  * New Upstream
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Mon, 13 Jan 2003 20:49:29 +0100
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Tue,  14 Jan 2003 12:45:43 +0200
 
 ogmtools (1:0.972-1) unstable; urgency=low
 
-  * new upstream.
+  * New Upstream
+  * exec autogen.sh when building for debian
+  * fixed indenting of extended description
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Fri,  3 Jan 2003 21:31:00 +0100
-
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Fri,  03 Jan 2003 23:59:59 +0200
 ogmtools (1:0.970-1) unstable; urgency=low
 
-  * new upstream.
+  * New Upstream
+  * Fixed by upstream release (Closes: #172326)
+  * Fixed by upstream release (Closes: #172533)
+  * Fixed by upstream release (Closes: #172771)
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
 
- -- Moritz Bunkus <moritz@bunkus.org>  Fri, 13 Dec 2002 16:09:26 +0100
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Fri,  13 Dec 2002 16:47:33 +0200
+
+ogmtools (1:0.960-7) unstable; urgency=low
+
+  * long description reformatted (Closes: #170940)
+  * depends on automake1.5 instead of automake1.6, can now be built on woody
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  27 Nov 2002 16:08:21 +0200
+
+ogmtools (1:0.960-6) unstable; urgency=low
+  * updated standards version to 3.5.8
+  * libavifile0.7 dep removed
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Tue,  26 Nov 2002 10:48:39 +0200
+ogmtools (1:0.960-5) unstable; urgency=low
+
+  * Dependency on automake1.6
+  * Upload sponsored by Luigi Gangitano <luigi@debian.org>
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Sun,  17 Nov 2002 20:32:59 +0200
+
+ogmtools (1:0.960-4) unstable; urgency=low
+
+  * README.Debian changed (ogmcat not functioning info)
+  * "fixed" some transitive dependencies (dependencies of ogmtools, but that
+    were also dependencies of dependencies of ogmtools). They are removed from
+    ogmtools.
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Fri,  15 Nov 2002 12:51:46 +0200
+
+ogmtools (1:0.960-3) unstable; urgency=low
+
+  * close ITP bug (Closes: #159271)
+  * moved ogmcat.1 as undocumented (for the time being)
+  * removed empty upstream manpage for ogmcat.1
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Thu,  14 Nov 2002 08:43:14 +0200
+
+ogmtools (1:0.960-2) unstable; urgency=low
+
+  * library dependencies added as used in Autotools (as observed in configure.in and Makefile.am)
+
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Wed,  13 Nov 2002 21:56:25 +0200
 
 ogmtools (1:0.960-1) unstable; urgency=low
 
@@ -117,5 +301,5 @@ ogmtools (0.901-1) unstable; urgency=low
 
   * Initial Release.
 
- -- Marc Leeman <marc.leeman@ieee.org>  Mon,  2 Sep 2002 10:25:46 +0200
+ -- Marc Leeman <mleeman@users.sourceforge.net>  Mon,  2 Sep 2002 10:25:46 +0200
 

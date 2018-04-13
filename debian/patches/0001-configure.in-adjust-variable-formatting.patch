@@ -1,0 +1,22 @@
+From: Marc Leeman <marc.leeman@gmail.com>
+Date: Thu, 1 Sep 2016 13:28:00 +0200
+Subject: configure.in: adjust variable formatting
+
+---
+ configure.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configure.in b/configure.in
+index c033234..f99597d 100644
+--- a/configure.in
++++ b/configure.in
+@@ -31,7 +31,7 @@ fi
+ dnl Check for headers
+ AC_HEADER_STDC()
+ 
+-CFLAGS="-Wall -Wno-sign-compare @OGG_CFLAGS@ @VORBIS_CFLAGS@ @AVILIB_CFLAGS@ @DEBUG_CFLAGS@ @PROFILING_CFLAGS@"
+-CXXFLAGS="-Wall -Wno-sign-compare @OGG_CFLAGS@ @VORBIS_CFLAGS@ @AVILIB_CFLAGS@ @DEBUG_CFLAGS@ @PROFILING_CFLAGS@"
++CFLAGS="-Wall -Wno-sign-compare $OGG_CFLAGS $VORBIS_CFLAGS $AVILIB_CFLAGS $DEBUG_CFLAGS $PROFILING_CFLAGS"
++CXXFLAGS="-Wall -Wno-sign-compare $OGG_CFLAGS $VORBIS_CFLAGS $AVILIB_CFLAGS $DEBUG_CFLAGS $PROFILING_CFLAGS"
+ 
+ AC_OUTPUT(Makefile avilib/Makefile)

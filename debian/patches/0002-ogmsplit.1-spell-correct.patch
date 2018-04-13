@@ -1,0 +1,20 @@
+From: Marc Leeman <marc.leeman@gmail.com>
+Date: Thu, 1 Sep 2016 13:34:08 +0200
+Subject: ogmsplit.1: spell correct
+
+---
+ ogmsplit.1 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ogmsplit.1 b/ogmsplit.1
+index ef1dc5e..bc8f4c0 100644
+--- a/ogmsplit.1
++++ b/ogmsplit.1
+@@ -1,6 +1,6 @@
+ .TH OGMSPLIT "1" "November 2004" "ogmsplit v1.5" "User Commands"
+ .SH NAME
+-ogmsplit \- Split OGG/OGM files into sevaral smaller OGG/OGM files
++ogmsplit \- Split OGG/OGM files into several smaller OGG/OGM files
+ .SH SYNOPSIS
+ .B ogmsplit
+ [\fIoptions\fR] \fIinname\fR
